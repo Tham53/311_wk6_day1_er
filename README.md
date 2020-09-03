@@ -11,14 +11,15 @@ You should already have MySQL installed from last week but if you don't, please 
 We need to alter a setting in our cloud database in order to import the dataset that we need. This setting has to do with "triggers" which we have not learned about directly but that you will look for more practice with later. 
 
 1. Navigate to cloud.google.com and make sure you are logged in. 
-
+check
 2. Navigate to your SQL instance (Cloud SQL)
-
+check?
 3. Under the "configuration" tab on the right side of your screen, select "edit configuration"
-
+check
 4. Under "Enable auto backups" DESELECT "enable binary logging"
-
+check
 5. Save and restart the instance
+check
 
 ##### Import data
 
@@ -27,10 +28,10 @@ We are going to use a sample schema given to use by MySQL.
 1. Download the zip directory and extract it
   * https://dev.mysql.com/doc/sakila/en/sakila-installation.html
   * The DB is called "sakila" under the Example Databases section
-
+check
 2. cd into that directory
   * Likely `cd ~/Downloads/sakila-db`
-
+check
 3. Run the connect command followed by `< sakila-schema.sql` to load that database
   * `mysql -u root -h <HOST IP FROM WORKBENCH> -p < sakila-schema.sql`
 
@@ -51,9 +52,9 @@ We are going to use a sample schema given to use by MySQL.
 ##### Create ER Diagram
 
 1. With MySQL Workbench open, click the "Database" tab
-
+check
 2. Select "Reverse Engineer"
-
+check
 3. Make sure your connection information is correct and then click "continue"
 
 4. Under "Select the schemas you want to include:" chose "sakila"
